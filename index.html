@@ -33,7 +33,7 @@
         
 function fetchXMLData() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://swopenapi.seoul.go.kr/api/subway/sample/xml/realtimeStationArrival/ALL", true);  // 서버의 XML 파일 경로로 수정
+    xhr.open("GET", "https://swopenapi.seoul.go.kr/api/subway/sample/xml/realtimeStationArrival/ALL", true);  // 서버의 XML 파일 경로로 수정
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
