@@ -33,8 +33,8 @@
         
         function fetchXMLData() {
         const xhr = new XMLHttpRequest();
-        const proxyUrl = "http://cors-anywhere.herokuapp.com/";
-        const targetUrl = "http://swopenapi.seoul.go.kr/api/subway/sample/xml/realtimeStationArrival/ALL";
+        const proxyUrl = "https://thingproxy.freeboard.io/fetch/";
+        const targetUrl = "https://swopenapi.seoul.go.kr/api/subway/sample/xml/realtimeStationArrival/ALL";
         xhr.open("GET", proxyUrl + targetUrl, true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
@@ -43,6 +43,7 @@
         };
         xhr.send();
     }
+
 
 
         // XML 데이터를 파싱하고 HTML에 표시하는 함수
